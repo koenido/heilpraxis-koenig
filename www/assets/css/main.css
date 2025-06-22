@@ -760,6 +760,23 @@ input, select, textarea {
 		}
 
 	}
+
+		@media screen and (max-width: 480px) and (orientation: portrait) {
+
+			.spotlight .image img {
+				max-height: 400px;
+			}
+
+			.spotlight.therapy .image img {
+				max-height: 200px;
+			}
+
+			.spotlight.therapy .image.middle img {
+				object-fit: cover;
+				object-position: center -40px;
+			}
+		}
+
 		.spotlight.content-align-center {
 			text-align: left;
 		}
@@ -1007,41 +1024,61 @@ input, select, textarea {
 
 		.banner .banner-logo {
 			position: absolute;
-			top: 0;
-			right: 0;
-			width: 100vw;
+			inset: 0;
 			height: 55%;
+			pointer-events: none; 
 			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
 			z-index: 1;
 		}
 
-		.banner .banner-logo .logo {
+		.banner .banner-logo .mandala {
+			flex: 0 0 25vw;
+			position: relative;
 			display: flex;
-			width: 50vw;
-			height: auto;
 			align-items: center;
 			justify-content: center;
-		}
-
-		.banner .banner-logo .logo img {
-			position: absolute;
-			left: 10rem;
-			max-height: 300px;
-			max-width: 500px;
-			width: auto;
-		}
-
-		.banner .banner-logo .mandala {
-			width: 50vw;
-			height: auto;
 			overflow: hidden;
 		}
 
-		.banner .banner-logo .mandala img {
+		.banner .banner-logo .mandala.left {
+			align-items: flex-end;
+		}
+
+		.banner .banner-logo .mandala.right {
+			align-items: flex-start;
+		}
+
+		.banner .banner-logo .logo {
+			width: 50vw;
+			padding: 3%;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+		}
+
+		.banner .banner-logo .logo img {
+			display: inline-block;
+			width: auto;
+			max-width: 70%;
+			max-height: 70%;
+		}
+
+		.banner .banner-logo .mandala.left img {
 			position: absolute;
-			top: -250px;
-			right: -250px;
-			width: 700px;
+			left: calc(-0.8 * min(45vh, 25vw));
+			bottom: calc(-0.8 * min(45vh, 25vw));
+			width: calc(1.8 * min(45vh, 25vw));
+			height: auto;
+			transform: rotate(45deg);
+		}
+
+		.banner .banner-logo .mandala.right img {
+			position: absolute;
+			right: calc(-0.8 * min(45vh, 25vw));
+			top: calc(-0.8 * min(45vh, 25vw));
+			width: calc(1.8 * min(45vh, 25vw));
 			height: auto;
 			transform: rotate(45deg);
 		}
@@ -1091,23 +1128,23 @@ input, select, textarea {
 			border-radius: 0;
 		}
 
-			.banner .image img {
-				-moz-object-fit: cover;
-				-webkit-object-fit: cover;
-				-ms-object-fit: cover;
-				object-fit: cover;
-				-moz-object-position: center;
-				-webkit-object-position: center;
-				-ms-object-position: center;
-				object-position: center;
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				border-radius: 0;
-			}
+		.banner .image img {
+			-moz-object-fit: cover;
+			-webkit-object-fit: cover;
+			-ms-object-fit: cover;
+			object-fit: cover;
+			-moz-object-position: center;
+			-webkit-object-position: center;
+			-ms-object-position: center;
+			object-position: center;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 0;
+		}
 
 		.banner.fullscreen {
 			min-height: calc(100vh - 100px);
@@ -1123,7 +1160,7 @@ input, select, textarea {
 		}
 
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1480px) {
 
 			.banner .banner-text h1 {
 				font-size: 2.5rem;
@@ -1131,20 +1168,8 @@ input, select, textarea {
 			}
 
 			.banner .banner-logo .logo img {
-				position: absolute;
-				left: 8rem;
-				max-height: 300px;
-				max-width: 400px;
-				width: auto;
-			}
-
-			.banner .banner-logo .mandala img {
-				position: absolute;
-				top: -250px;
-				right: -250px;
-				width: 600px;
-				height: auto;
-				transform: rotate(45deg);
+				max-width: 70%;
+				max-height: 70%;
 			}
 
 		}
@@ -1155,18 +1180,9 @@ input, select, textarea {
 				font-size: 2rem;
 			}
 
-			.banner .banner-logo .logo {
-				width: 100%;
-			}
-
 			.banner .banner-logo .logo img {
-				max-height: 300px;
-				max-width: 400px;
-				width: auto;
-			}
-
-			.banner .banner-logo .mandala {
-				display: none;
+				max-width: 85%;
+				max-height: 85%;
 			}
 
 		}
@@ -1183,13 +1199,26 @@ input, select, textarea {
 				margin: 3rem;
 			}
 
-			.banner .banner-logo .logo img {
-				display: block;
-				position: relative;
-				left: auto;
-				margin: 0 auto;
-				max-height: 40%;
-				max-width: 50%;
+			.banner .banner-logo .mandala {
+				overflow: visible;
+			}
+
+			.banner .banner-logo .mandala.left img {
+				position: absolute;
+				left: calc(-0.8 * min(45vh, 25vw));
+				bottom: calc(-0.8 * min(45vh, 25vw));
+				width: calc(2 * min(45vh, 25vw));
+				height: auto;
+				transform: rotate(45deg);
+			}
+
+			.banner .banner-logo .mandala.right img {
+				position: absolute;
+				right: calc(-0.8 * min(45vh, 25vw));
+				top: calc(-0.8 * min(45vh, 25vw));
+				width: calc(2 * min(45vh, 25vw));
+				height: auto;
+				transform: rotate(45deg);
 			}
 		}
 
@@ -1202,15 +1231,30 @@ input, select, textarea {
 
 			.banner .banner-text h1 {
 				font-size: 1rem;
-				margin: 3rem;
+				margin: 1.5rem 3rem;
 			}
 
-			.banner .banner-logo .logo {
-				width: 100%;
+			.banner .banner-logo .logo img {
+				max-width: 95%;
+				max-height: 95%;
 			}
 
-			.banner .banner-logo .mandala {
-				display: none;
+			.banner .banner-logo .mandala.left img {
+				position: absolute;
+				left: calc(-0.9 * min(45vh, 25vw));
+				bottom: calc(-0.9 * min(45vh, 25vw));
+				width: calc(2.2 * min(45vh, 25vw));
+				height: auto;
+				transform: rotate(45deg);
+			}
+
+			.banner .banner-logo .mandala.right img {
+				position: absolute;
+				right: calc(-0.9 * min(45vh, 25vw));
+				top: calc(-0.9 * min(45vh, 25vw));
+				width: calc(2.2 * min(45vh, 25vw));
+				height: auto;
+				transform: rotate(45deg);
 			}
 
 		}
@@ -1667,9 +1711,9 @@ input, select, textarea {
 		display: inline-block;
 		text-align: left;
 		margin: 0;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		line-height: 1.5;
-		color: #555;
+		color: #000;
 	}
 
 	.contact-card p a {
