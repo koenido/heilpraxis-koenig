@@ -1,0 +1,29 @@
+name: Update copyright year
+
+on:
+  schedule:
+    - cron:  '5 0 1 1 *' # 00:05 AM on January 1
+
+jobs:
+  update-year:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Replace copyright year
+        run: |
+          NEW_YEAR=$(date +'%Y')
+          sed -Ei "s/(&copy;[[:space:]]+2023[[:space:]]+–[[:space:]]+)([0-9]{4})/\\1${NEW_YEAR}/" www/index.html
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-action"
+          git config user.email "github-actions@noreply.github.com"
+
+          git add index.html
+          git diff --quiet || git commit -m "Update copyright year to $(date +'%Y')"
+          git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,470 +1,578 @@
 <!DOCTYPE HTML>
 <!--
-	Photon by HTML5 UP
+	Story by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Photon by HTML5 UP</title>
+		<title>Heilpraxis König</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.getElementById('nav-toggle-checkbox');
+            const toggleLabel = document.querySelector('.nav .nav-toggle');
+            document.querySelector('.nav .header')
+                    .addEventListener('click', event => {
+            if (event.target.closest('li')) {
+                navToggle.checked = false;
+            }
+            });
+        });
+    </script>
 	<body>
+		<!-- Wrapper -->
+        <div id="wrapper" class="divided">
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<span class="icon major fa-cloud"></span>
-					<h1>Hi, I'm running in an <strong>k8s container</strong>, another fine<br />
-					example of the flexibility of the cloud</h1>
-					<p>Building the cloud, one container at a time  by GBAEKE</p>
-					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Discover</a></li>
-					</ul>
-				</div>
-			</section>
+            <!-- Header -->
+            <section class="wrapper">
+                <div id="nav" class="nav">
+                    <div class="home-image"><a href="index.html"><img src="img/favicon.png" alt="Home" /></a></div>
+                    
+                    <div class="bar">
+                        <input type="checkbox" id="nav-toggle-checkbox" class="nav-toggle-checkbox" />
+                        <label for="nav-toggle-checkbox" class="nav-toggle">
+                            <i class="fas fa-bars" aria-label="Menü öffnen"></i>
+                        </label>
 
-		<!-- One -->
-			<section id="one" class="main style1">
-				<div class="container">
-					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
-							</header>
-							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
-						</div>
-						<div class="6u$ 12u$(medium) important(medium)">
-							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
-						</div>
-					</div>
-				</div>
-			</section>
+                        <div class="header">
+                            <ul>
+                                <li><a href="#challenges">Schwerpunkte</a></li>
+                                <li><a href="#therapy">Therapie Angebot</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#praxis">Praxis</a></li>
+                                <li><a href="#contact">Kontakt</a></li>
+                                <li><a href="https://www.instagram.com/heilpraxis_koenig/"><i class="fab fa-instagram align"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-		<!-- Two -->
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-							<ul class="major-icons">
-								<li><span class="icon style1 major fa-code"></span></li>
-								<li><span class="icon style2 major fa-bolt"></span></li>
-								<li><span class="icon style3 major fa-camera-retro"></span></li>
-								<li><span class="icon style4 major fa-cog"></span></li>
-								<li><span class="icon style5 major fa-desktop"></span></li>
-								<li><span class="icon style6 major fa-calendar"></span></li>
-							</ul>
-						</div>
-						<div class="6u$ 12u$(medium)">
-							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
-							</header>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-							<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-						</div>
-					</div>
-				</div>
-			</section>
+            <!-- Home -->
+                <section id="home" class="banner fullscreen">
+                    <div class="banner-logo">
+                        <div class="logo">
+                            <img src="img/home-logo-no-text.png" alt="Logo Claudia König" />
+                        </div>
 
-		<!-- Three -->
-			<section id="three" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>Adipiscing amet consequat</h2>
-					</header>
-					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
-					<div class="row 150%">
-						<div class="4u 12u$(medium)">
-							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</div>
-						<div class="4u 12u$(medium)">
-							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+                        <div class="mandala">
+                            <img src="img/mandala-golden-flower.png" alt="Mandala" />
+                        </div>
+                    </div>
 
-		<!-- Four -->
-			<section id="four" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>Ipsum feugiat consequat?</h2>
-					</header>
-					<p>Sed lacus nascetur ac ante amet sapien.</p>
-					<ul class="actions uniform">
-						<li><a href="#" class="button special">Sign Up</a></li>
-						<li><a href="#" class="button">Learn More</a></li>
-					</ul>
-				</div>
-			</section>
+                    <div class="banner-text">
+                        <h1>Heilpraktikerin für Psychotherapie,<br>Coaching und Systemische Aufstellung</h1>
+                        <!-- <p>Claudia König</p> -->
+                    </div>
 
-		<!-- Five -->
-		<!--
-			<section id="five" class="main style1">
-				<div class="container">
-					<header class="major special">
-						<h2>Elements</h2>
-					</header>
+                    <div class="image">
+                        <img src="img/header-banner.png" alt="Header-Bild" />
+                    </div>
+                </section>
+            
+            <!-- Quote -->
+                <section class="wrapper">
+                    <div class="inner quote-wrapper">
+                        <q class="quote non-mobile">
+                            "Ich glaube, das größte Geschenk, das ich von jemandem bekommen kann, ist, dass er mich sieht, mir zuhört, mich versteht und mich berührt. Das größte Geschenk, das ich einem anderen Menschen machen kann, ist, ihn zu sehen, ihm zuzuhören, ihn zu verstehen und ihn zu berühren. Wenn das gelingt, habe ich das Gefühl, dass wir uns wirklich begegnet sind."
+                        </q>
+                        <q class="quote mobile">
+                            "Ich glaube, das größte Geschenk, das ich von jemandem bekommen kann, ist, dass er mich sieht, mir zuhört, mich versteht und mich berührt."
+                        </q>
+                        <p class="author">
+                            &ndash; Virgina Satir (&#10013;&#65038; 1989)
+                        </p>
+                    </div>
+                </section>
 
-					<section>
-						<h4>Text</h4>
-						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-						<hr />
-						<header>
-							<h4>Heading with a Subtitle</h4>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<header>
-							<h5>Heading with a Subtitle</h5>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<hr />
-						<h2>Heading Level 2</h2>
-						<h3>Heading Level 3</h3>
-						<h4>Heading Level 4</h4>
-						<h5>Heading Level 5</h5>
-						<h6>Heading Level 6</h6>
-						<hr />
-						<h5>Blockquote</h5>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-						<h5>Preformatted</h5>
-						<pre><code>i = 0;
+            <!-- Zielpublikum -->
+                <section id="hello" class="spotlight orient-left content-align-left image-position-top">
+                    <div class="content">
+                        <h2>Psychotherapie, systemische Aufstellung und Coaching</h2>
+                        <p>
+                            Ich biete Therapien für alle, die mehr <strong>Klarheit</strong> gewinnen, ihre <strong>Handlungsfähigkeit</strong> stärken und sich <strong>sicher fühlen</strong> wollen.
+                        </p>
+                        <ul class="actions fit icon">
+                            <li>
+                                <i class="fas fa-heart fa-2x"></i>
+                                <span>Paare</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-female fa-2x"></i>
+                                <span>Frauen</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-male fa-2x"></i>
+                                <span>Männer</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-user-graduate fa-2x"></i>
+                                <span>Junge Erwachsene</span>
+                            </li>
+                        </ul>
+                        <p>
+                            Durch psychotherapeutische Begleitung und Coaching lernst du, dich selbst besser zu regulieren, schwierige Emotionen zu verstehen und zu verarbeiten. Du wirst lernen, resilienter auf Stress und Herausforderungen zu reagieren.
+                        </p>
+                        <p class="btn">
+                            <a href="#contact" class="btn-contact">Kontaktiere mich jetzt</a>
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="img/portrait.jpg" alt="" />
+                    </div>
+                </section>
+                
+                <!-- Schwerpunkte / Problemfelder -->
+                <section id="challenges" class="wrapper">
+                    <div class="inner">
+                        <h2>Mögliche Herausforderungen, bei denen ich dich unterstütze</h2>
+                        <p>
+                            Es gibt Zeiten, in denen wir uns mit Problemen und Belastungen konfrontiert sehen, die uns überfordern. Oft ist es der erste Schritt, die richtigen Worte für das eigene Gefühl zu finden. Wenn du dich in einer dieser Situationen befindest, bin ich für dich da, um gemeinsam Lösungen zu entwickeln und neue Wege zu gehen.
+                        </p>
+                        <details class="list">
+                            <summary>Klarheit für dich selbst</summary>
+                            <p>Was ist dir wichtig? Wo möchtest du hin? Gemeinsam klären wir deine Ziele und stärken deine innere Ausrichtung. </p>
+                        </details>
+                        <details class="list">
+                            <summary>Lebenskrisen & Übergänge</summary>
+                            <p>Trennung, Verlust, berufliche Neuorientierung oder das Gefühl, dass sich „etwas ändern muss“ – ich begleite dich durch Zeiten des Umbruchs. </p>
+                        </details>
+                        <details class="list">
+                            <summary>Familiäre Konflikte</summary>
+                            <p>Schwierigkeiten in Partnerschaft oder Familie, Herausforderungen im Umgang mit Kindern, Streit und Sprachlosigkeit – wir schauen gemeinsam auf Dynamiken und neue Möglichkeiten. </p>
+                        </details>
+                        <details class="list">
+                            <summary>Systemische Verstrickungen</summary>
+                            <p>Wenn alte Muster oder unausgesprochene Familienrollen belasten, kann es heilsam sein, das System gemeinsam zu betrachten und zu entwirren. </p>
+                        </details>
+                        <details class="list">
+                            <summary>Fehlende Klarheit und Selbstverständnis</summary>
+                            <p>Durch die Arbeit mit deinen inneren Anteilen und systemischen Aufstellungen wirst du klarer sehen, warum du in bestimmten Situationen feststeckst und welche Ressourcen du bereits in dir trägst. Diese Klarheit hilft dir, sicherere und bewusstere Entscheidungen zu treffen. </p>
+                        </details>
+                        <details class="list">
+                            <summary>Psychische Belastungen und Kraftlosigkeit</summary>
+                            <p>Ängste, depressive Verstimmungen, emotionale Überforderung, Erschöpfung oder Burnout – du musst da nicht allein durch. Wir gehen den Weg in deinem Tempo. </p>
+                        </details>
+                    </div>
+                </section>
+                
+                <!-- Methodik -->
+                <section id="methods" class="wrapper">
+                    <div class="inner">
+                        <h2>Wie ich arbeite &ndash; Meine Methodik</h2>
+                    </div>
+                    <div class="square">
+                        <div class="method">
+                            <h4>Du</h4>
+                            <p>Im Mittelpunkt meiner Arbeit stehst du – mit deinem Erleben, deinen Gefühlen und deinem ganz eigenen Weg.</p>
+                            <p>Du bist die Expertin/der Experte für dein Leben. Ich begleite dich darin, wieder in Kontakt mit dir selbst zu kommen, deiner inneren Stimme zu vertrauen und deinen eigenen Rhythmus zu finden.</p>
+                            <p>Du bist willkommen – mit allem, was dich ausmacht. Mit dem, was gerade schwerfällt, und mit dem, was wachsen möchte.</p>
+                            <p>Ich arbeite ressourcenorientiert, achtsam und auf Augenhöhe. In einem geschützten Raum darf alles da sein: das Leise, das Schwere, das Unklare – genauso wie Hoffnung, Mut und deine ganz persönliche Stärke.</p>
+                            <p>Gemeinsam schauen wir auf das, was dich bewegt, bremst oder berührt. Und auf das, was dich trägt.</p>
+                        </div>
+                        <div class="method">
+                            <h4>Gesprächsführung nach Rogers</h4>
+                            <p>Ein zentraler Bestandteil meiner therapeutischen Arbeit ist die Gesprächsführung nach Carl Rogers.</p> 
+                            <p>Diese basiert auf echtem Zuhören, Empathie, Wertschätzung und Kongruenz – einer Haltung, in der ich dir authentisch und ohne Urteil begegne.</p>
+                            <p>Diese therapeutische Grundhaltung schafft einen sicheren Raum, in dem Vertrauen entstehen kann. Sie lädt dazu ein, dich selbst in deinem eigenen Tempo zu entdecken und neue innere Bewegungen zuzulassen. Wenn du dich gesehen, gehört und ernst genommen fühlst, können heilsame Prozesse beginnen – oft ganz still und von innen heraus.</p>
+                        </div>
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+                        <div class="method">
+                            <h4>Systemische Therapie</h4>
+                            <p>Ergänzend beziehe ich Elemente der systemischen Therapie mit ein. Dieser Ansatz hilft dabei, Zusammenhänge sichtbar zu machen: Welche Rollen und Muster prägen dein Denken, Fühlen und Handeln? Welche Dynamiken wirken in deiner Familie, deiner Partnerschaft oder deinem beruflichen Umfeld?</p>
+                            <p>Systemische Arbeit erweitert den Blick – weg vom Problem hin zum größeren Ganzen. Oft wird dadurch verständlich, warum bestimmte Themen immer wieder auftauchen oder warum Veränderung bisher schwergefallen ist.</p>
+                            <p>Dieser Perspektivwechsel kann überraschende Einsichten ermöglichen und neue Handlungsspielräume eröffnen.</p>
+                            <p>Denn manchmal reicht schon ein kleiner innerer Schritt – und etwas in deinem System beginnt, sich zu bewegen</p>
+                        </div>
+                        <div class="method">
+                            <h4>Kraft in Dir</h4>
+                            <p>Meine Haltung dabei ist klar: <b>Du trägst bereits alles in dir, was du brauchst.</b></p>
+                            <p>Manchmal ist diese innere Kraft nur verdeckt – durch Erfahrungen, Zweifel oder alte Muster. Ich unterstütze dich dabei, sie (wieder) zu entdecken.</p> 
+                            <p>In unserer gemeinsamen Arbeit schauen wir auf das, was dich stärkt, was dich trägt und was dir Halt gibt.</p>
+                            <p>Kraft muss nicht laut sein. Sie kann leise, klar und ganz bei dir sein – spürbar in kleinen Schritten, in Momenten der Klarheit oder in dem Gefühl, dir selbst wieder näher zu sein.</p>
+                            <p>Denn heilsame Veränderung beginnt oft dort, wo du spürst: <b>Ich kann. Ich darf. Ich bin.</b></p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Therapie -->
+                <section id="therapy" class="spotlight column">
+                    <div class="content">
+                        <h2>Meine Therapie Angebote</h2>
+                    </div>
+                </section>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-					</section>
+                <section class="spotlight orient-left content-align-left image-position-top">
+                    <div class="content">
+                        <h3>Psychotherapie</h3>
+                        <p>
+                            Mit Gesprächsführung nach Carl Rogers begleite ich dich auf deinem Weg zu mehr Klarheit und Lebensqualität. Gemeinsam schauen wir uns deine Herausforderungen an, erkennen Muster und finden Lösungen, die dir neue Perspektiven eröffnen.
+                        </p>
+                        <p>
+                            Durch psychotherapeutische Begleitung lernst du, dich selbst besser zu regulieren, schwierige Emotionen zu verstehen und zu verarbeiten. Du wirst lernen, resilienter auf Stress und Herausforderungen zu reagieren.
+                        </p>
+                    </div> 
+                    <div class="image">
+                        <img src="img/sofa.jpg" alt="" />
+                    </div>       
+                </section>
 
-					<section>
-						<h4>Lists</h4>
-						<div class="row">
-							<div class="6u 12u$(medium)">
-								<h5>Unordered</h5>
-								<ul>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-								<h5>Alternate</h5>
-								<ul class="alt">
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-							</div>
-							<div class="6u$ 12u$(medium)">
-								<h5>Ordered</h5>
-								<ol>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis viverra.</li>
-									<li>Felis enim feugiat.</li>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis lorem.</li>
-									<li>Felis enim et feugiat.</li>
-								</ol>
-								<h5>Icons</h5>
-								<ul class="icons">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<h5>Actions</h5>
-						<div class="row">
-							<div class="6u 12u$(medium)">
-								<ul class="actions">
-									<li><a href="#" class="button special">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions small">
-									<li><a href="#" class="button special small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-								<ul class="actions vertical">
-									<li><a href="#" class="button special">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions vertical small">
-									<li><a href="#" class="button special small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-							</div>
-							<div class="6u 12u$(medium)">
-								<ul class="actions vertical">
-									<li><a href="#" class="button special fit">Default</a></li>
-									<li><a href="#" class="button fit">Default</a></li>
-								</ul>
-								<ul class="actions vertical small">
-									<li><a href="#" class="button special small fit">Small</a></li>
-									<li><a href="#" class="button small fit">Small</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+                <section class="spotlight orient-left content-align-left">
+                    <div class="content">
+                        <h3>Systemische Aufstellung</h3>
+                        <p>
+                            Systemische Aufstellungen helfen dabei, verborgene Zusammenhänge und innere Blockaden sichtbar zu machen – sei es im familiären, beruflichen oder persönlichen Bereich.
+                            Gemeinsam schauen wir hinter das, was vordergründig sichtbar ist, und machen die Dynamik in der Situation erlebbar. So entstehen neue Sichtweisen und Wege, die du nachhaltig in deinem Alltag umsetzen kannst.  
+                        </p>
+                        <p>
+                            Mögliche Themen:
+                            <ul>
+                                <li>Familiäre Beziehungen und Herkunftssysteme</li>
+                                <li>Bussiness- und Organisations-Aufstellungen</li>
+                                <li>Aufstellung von Lebensthmen und Entscheidungsfragen</li>
+                                <li>Körperliche oder seelische Symptome-Aufstellungen</li>
+                                <li>Persönlichkeitsanteil-Aufstellung </li>
+                            </ul> 
+                        </p>
+                    </div> 
+                    <div class="image">
+                        <img src="img/bricks.jpg" alt="" />
+                    </div>       
+                </section>
 
-					<section>
-						<h4>Table</h4>
-						<h5>Default</h5>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
+                <section class="spotlight orient-left content-align-left">
+                    <div class="content">
+                        <h3>Coaching</h3>
+                        <p>
+                            Für persönliche und berufliche Weiterentwicklung. Jeder von uns hat die Fähigkeit, Veränderungen zu bewirken – egal, wie festgefahren eine Situation erscheinen mag. Wenn du den ersten Schritt machst und dich auf den Weg begibst, öffnen sich neue Perspektiven. Zusammen können wir Lösungen finden, die dir helfen, deine Herausforderungen zu meistern und dein Leben wieder in Balance zu bringen.
+                        </p>
+                    </div> 
+                    <div class="image">
+                        <img src="img/notes.jpg" alt="" />
+                    </div>
+                </section>
 
-						<h5>Alternate</h5>
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
+                <section class="spotlight orient-left content-align-left">
+                    <div class="content">
+                        <h3>Arbeit mit inneren Anteilen</h3>
+                        <p>
+                            In jedem von uns gibt es verschiedene innere Anteile – wie Stimmen oder Seiten in uns, die manchmal widersprüchlich wirken. Zum Beispiel gibt es vielleicht einen Teil in dir, der mutig vorangehen will, und einen anderen, der Angst hat und dich zurückhält. Diese inneren Anteile entstehen oft aus Erfahrungen, die wir im Laufe unseres Lebens gemacht haben.
+                        </p>
+                        <p>
+                            In meiner Praxis schauen wir gemeinsam liebevoll auf diese inneren Teile. Wir lernen sie kennen, hören ihnen zu und verstehen, warum sie da sind. Häufig steckt hinter einem blockierenden Anteil ein Schutzmechanismus – ein Teil, der dich vor Schmerz oder Enttäuschung bewahren möchte.
+                        </p>
+                        <p>
+                            Wenn du lernst, mit deinen inneren Anteilen in Kontakt zu treten, entsteht mehr Klarheit, Selbstmitgefühl und innere Ruhe. Jeder Anteil hat seine eigene Bedeutung – und wenn alle gesehen, gehört und wertgeschätzt werden, kann wieder mehr innere Balance und Lebendigkeit entstehen.
+                        </p>
+                    </div> 
+                    <div class="image">
+                        <img src="img/cards.jpg" alt="" />
+                    </div>
+                </section>
 
-					<section>
-						<h4>Buttons</h4>
-						<ul class="actions">
-							<li><a href="#" class="button special">Special</a></li>
-							<li><a href="#" class="button">Default</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button big">Big</a></li>
-							<li><a href="#" class="button">Default</a></li>
-							<li><a href="#" class="button small">Small</a></li>
-						</ul>
-						<ul class="actions fit">
-							<li><a href="#" class="button fit">Fit</a></li>
-							<li><a href="#" class="button special fit">Fit</a></li>
-							<li><a href="#" class="button fit">Fit</a></li>
-						</ul>
-						<ul class="actions fit small">
-							<li><a href="#" class="button special fit small">Fit + Small</a></li>
-							<li><a href="#" class="button fit small">Fit + Small</a></li>
-							<li><a href="#" class="button special fit small">Fit + Small</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button special icon fa-download">Icon</a></li>
-							<li><a href="#" class="button icon fa-download">Icon</a></li>
-						</ul>
-						<ul class="actions">
-							<li><span class="button special disabled">Disabled</span></li>
-							<li><span class="button disabled">Disabled</span></li>
-						</ul>
-					</section>
+                <section class="spotlight orient-left content-align-left">
+                    <div class="content">
+                        <h3>Seminare und Workshops</h3>
+                        <p>
+                            Neben meiner therapeutischen Arbeit biete ich regelmäßig Workshops und besondere Formate an, die Körper, Geist und Seele ansprechen.
+                            Diese Angebote laden dazu ein, sich selbst auf neue Weise zu begegnen, in Verbindung zu kommen – mit dem eigenen Inneren und mit anderen.
+                        </p>
+                        <p>
+                            Wenn du auf dem Laufenden bleiben möchtest, melde dich gerne bei mir oder folge meinen Ankündigungen auf Instragram.
+                        </p>
+                        <p>
+                            <b>Women Circle:</b> <br>
+                            Einmal im Monat lade ich Frauen ein, in einem geschützten Rahmen zusammenzukommen – zum Innehalten, Austauschen und Auftanken.    
+                        </p>
+                    </div> 
+                    <div class="image">
+                        <img src="img/book.jpg" alt="" />
+                    </div>       
+                </section>
 
-					<section>
-						<h4>Form</h4>
-						<form method="post" action="#">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)">
-									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-								</div>
-								<div class="12u$">
-									<div class="select-wrapper">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-								</div>
-								<div class="4u 12u$(small)">
-									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-									<label for="demo-priority-low">Low</label>
-								</div>
-								<div class="4u 12u$(small)">
-									<input type="radio" id="demo-priority-normal" name="demo-priority">
-									<label for="demo-priority-normal">Normal</label>
-								</div>
-								<div class="4u$ 12u$(small)">
-									<input type="radio" id="demo-priority-high" name="demo-priority">
-									<label for="demo-priority-high">High</label>
-								</div>
-								<div class="6u 12u$(small)">
-									<input type="checkbox" id="demo-copy" name="demo-copy">
-									<label for="demo-copy">Email me a copy</label>
-								</div>
-								<div class="6u$ 12u$(small)">
-									<input type="checkbox" id="demo-human" name="demo-human" checked>
-									<label for="demo-human">Not a robot</label>
-								</div>
-								<div class="12u$">
-									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-								<div class="12u$">
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
+            <!-- Team -->
+            <section id="team" class="spotlight orient-right content-align-left image-position-top">
+                <div class="content">
+                    <h2>Das bin ich</h2>
+                    <p>
+                        Es gibt Momente im Leben, die fordern uns heraus – und gleichzeitig laden sie uns ein: innezuhalten, neu zu sortieren und uns selbst wieder näherzukommen.
+                    </p>
+                    <p>
+                        In meiner Arbeit als Heilpraktikerin für Psychotherapie begleite ich Menschen, die sich in belastenden Lebenssituationen befinden oder an einem Wendepunkt stehen – oft sind es Frauen in Umbruchsphasen, aber ebenso Menschen, die mit psychischen Herausforderungen wie Ängsten, Erschöpfung oder innerer Unruhe zu tun haben. Mit Feingefühl, Klarheit und Achtsamkeit unterstütze ich dabei, mit Selbstmitgefühl neue Perspektiven zu finden, innere Stärke zu aktivieren und heilsame Veränderungen anzustoßen.
+                    </p>
+                    <h4 class="bold">
+                        Meine Aus- und Weiterbildungen :
+                    </h4>
+                    <p>
+                        Meine Arbeit basiert auf einem breiten und fundierten Ausbildungs- hintergrund, den ich laufend durch Fortbildungen erweitere. So kann ich unterschiedliche Methoden individuell und achtsam auf dich abstimmen.
+                    </p>
+                    <p>
+                        <b>Grundlagen meiner Qualifikation:</b>
+                        <ul>
+                            <li>Heilpraktikerin für Psychotherapie (nach dem Heilpraktikergesetz)</li>
+                            <li>Ausbildung in systemischer Aufstellungsarbeit</li>
+                            <li>Gesprächsführung nach Carl Rogers (klientenzentrierte Gesprächsführung)</li>
+                            <li>Spirituelle Life Coach Ausbildung</li>
+                        </ul> 
+                    </p>
+                    <p>
+                        <b>Vertiefende Fortbildungen und Methoden:</b>
+                        <ul>
+                            <li>Arbeit mit inneren Anteilen (IFS – Internal Family Systems)</li>
+                            <li>EMDR (Eye Movement Desensitization and Reprocessing)</li>
+                            <li>Kinesiologie</li>
+                            <li>EFT (Emotional Freedom Technique)</li>
+                            <li>Meditation & Achtsamkeit</li>
+                            <li>Soul Motion<sup>&copy;</sup> Training Foundations (Körperarbeit & Bewegung)</li>
+                            <li>Tanz- und Selbsterfahrungsworkshops bei Dorle Wege</li>
+                        </ul> 
+                    </p>
+                    <p>
+                        Die Methode der Arbeit mit den inneren Anteilen liegt mir besonders am Herzen: Sie ermöglicht einen liebevollen und zugleich klaren Blick auf die verschiedenen inneren Stimmen, die uns prägen. Oft liegt genau in ihrem Zusammenspiel der Schlüssel zu mehr Selbstverständnis und innerem Frieden. 
+                    </p>
+                    <p>
+                        Diese Vielfalt meiner Aus- und Weiterbildungen ermöglicht es mir, dir eine Begleitung anzubieten, die sowohl psychologisch fundiert als auch körperlich und intuitiv ausgerichtet ist – immer in Resonanz mit dem, was du gerade brauchst.
+                    </p>
+                </div> 
+                <div class="image">
+                    <img src="img/portrait-2.jpg" alt="" />
+                </div>
+            </section>
 
-					<section>
-						<h4>Image</h4>
-						<h5>Fit</h5>
-						<div class="box alt">
-							<div class="row uniform 50%">
-								<div class="12u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-							</div>
-						</div>
-						<h5>Left &amp; Right</h5>
-						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-					</section>
+            <!-- Praxis -->
+            <section id="praxis" class="spotlight orient-left content-align-left image-position-center">
+                <div class="content">
+                    <h2>Meine Praxis</h2>
+                    <p>
+                        Ich empfange Dich gerne zu Terminen in meinen Praxisräumen oder biete Dir die Möglichkeit, online Therapiestunden zu vereinbaren.
+                    </p>
+                    <p>
+                        Meine Therapiestunden vor Ort sowie Workshops finden im frei-raum Schwäbisch Gmünd statt, mit denen ich kooperiere.
+                    </p>
+                    <div class="address-map-wrapper">
+                        <div class="map-small">
+                            <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=9.777102470397951%2C48.788912598630205%2C9.809031486511232%2C48.80700478096948&amp;layer=mapnik&amp;marker=48.794677%2C9.794049"
+                            style="border:0;"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            frameborder="0"
+                            allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="address-text">
+                            <!-- <i class="fas fa-map-marker-alt"></i> -->
+                            <h4>Adresse</h4>
+                            <p>
+                            frei-raum Schwäbisch Gmünd <br>
+                            Schillerstrasse 12 <br>
+                            73527 Schwäbisch Gmünd
+                            </p>
+                            <p>
+                                <br><i class="fab fa-instagram align"></i><a href="https://www.instagram.com/freiraumgd/" target="_blank" rel="noopener">@freiraumgd</a>
+                                <br><i class="fab fa-instagram align"></i><a href="https://www.instagram.com/heilpraxis_koenig/" target="_blank" rel="noopener">@heilpraxis_koenig</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">   
+                    <img src="img/praxis.jpg" alt="">
+                </div>
+            </section>
+            
+            <!-- Reviews -->
+            <section class="wrapper">
+                <div class="inner">
+                    <h2>Feedback von meinen Patienten</h2>
+                    <p>Erfahren Sie, wie andere Menschen ihre therapeutische Begleitung erlebt haben. Lesen Sie das Feedback meiner Patienten, um einen Eindruck von meiner Arbeit zu bekommen.</p>
+                </div>
 
-				</div>
-			</section>
-		-->
+                <div class="gallery">
+                    <article>
+                        <div class="image"><img src="img/header-banner.png" alt="" /></div> 
+                        <div class="caption">
+                            <div class="text">"Claudias ruhige und einfühlsame Art hat mir geholfen, mit verschiedenen Anteilen in mir in Kontakt zu kommen. Durch ihre Begleitung konnte ich dysfunktionale Glaubenssätze aufspüren , ihnen Raum geben und neue Perspektiven entwickeln. Ihre Arbeit hat mich nachhaltig inspiriert, gestärkt und ich bin ihr sehr dankbar."</div>
+                            <div class="author"> &ndash; Caro E. (45)</div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image"><img src="img/header-banner.png" alt="" /></div> 
+                        <div class="caption">
+                            <div class="text">"Ich danke dir von Herzen, liebe Claudi. Dein Coaching hat so viel verändert und ich habe dadurch so viel entdeckt!!! Danke Danke Danke."</div>
+                            <div class="author"> &ndash; Sophie R. (28)</div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image"><img src="img/header-banner.png" alt="" /></div> 
+                        <div class="caption">
+                            <div class="text">"Dein Therapiestil ist klar und präzise, du gibt viel Raum und Pausen zum selber denken und um auf Lösungen zu kommen. Du hast Verständnis ohne zu Bewerten."</div>
+                            <div class="author"> &ndash; Sabine Z. (43)</div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image"><img src="img/header-banner.png" alt="" /></div> 
+                        <div class="caption">
+                            <div class="text">"Du hast eine ganz ruhige Ausstrahlung, das gibt Vertrauen und Sicherheit."</div>
+                            <div class="author"> &ndash; Peter St. (42)</div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image"><img src="img/header-banner.png" alt="" /></div> 
+                        <div class="caption">
+                            <div class="text">"Ich habe mich in Claudias Coaching sehr gesehen, wertgeschätzt und verstanden gefühlt. Bei Claudia merkt man (oder frau :)) ganz schnell, dass sie ihre Arbeit aus dem Herzen und mit Überzeugung tut, was sich deutlich in den Ergebnissen abzeichnet! Ich freue mich sehr auf unsere weitere gemeinsame Arbeit!"</div>
+                            <div class="author"> &ndash; Sabrina M. (29)</div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image"><img src="img/header-banner.png" alt="" /></div> 
+                        <div class="caption">
+                            <div class="text">"Claudia gab mir den Raum, um meine Gefühle und Themen zu benennen. Im Anschluss hat sie mich bei der Verarbeitung sanft und liebevoll begleitet, sodass ich aus unseren Sitzungen mit Leichtigkeit, Klarheit und innerer Gelassenheit weiter auf meinem Weg gehen konnte. Von Herzen tausend Dank, dass es Dich gibt und Du mich in meinen nächsten Schritten sicher, gezielt und empathisch begleitet hast."</div>
+                            <div class="author"> &ndash; Lara K. (35)</div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</section>
+            <!-- Kontakt -->
+            <section id="contact" class="wrapper">
+                <div class="inner">
+                    <h2>Kontakt</h2>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="icon-wrapper">
+                            <i class="fas fa-user"></i>
+                            </div>
+                            <h3>Kontakt</h3>
+                            <p>
+                                Claudia König <br>
+                                T: +49 157 738 622 83 <br>
+                                M: <a href="mailto:heilpraxis-koenig@t-online.de">heilpraxis-koenig@t-online.de</a><br>
+                                I: <a href="https://www.instagram.com/heilpraxis_koenig/">@heilpraxis_koenig</a>
+                            </p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Adresse meiner Praxis</h3>
+                            <p>
+                                <br>
+                                Freiraum Schwäbisch Gmünd <br>
+                                Schillerstrasse 12 <br>
+                                73527 Schwäbisch Gmünd
+                            </p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Termine</h3>
+                            <p>
+                                <br>
+                                Nach Vereinbarung:<br>
+                                per Telefon oder E-Mail
+                            </p>
+                        </div>
+                    </div>
+                    <div class="therapy-times">
+                        <h2>Therapiezeiten</h2>
+                        <p>Flexible Termine nach individueller Vereinbarung, bei Bedarf auch abends oder am Wochenende. </p>
+                        <!-- <table>
+                            <thead>
+                            <tr>
+                                <th>Wochentag</th>
+                                <th>Vormittag</th>
+                                <th>Nachmittag</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Montag</td>
+                                <td>07:00 - 12:00 Uhr</td>
+                                <td>14:00 - 18:00 Uhr</td>
+                            </tr>
+                            <tr>
+                                <td>Dienstag</td>
+                                <td>07:00 - 12:00 Uhr</td>
+                                <td>14:00 - 18:00 Uhr</td>
+                            </tr>
+                            <tr>
+                                <td>Mittwoch</td>
+                                <td>07:00 - 12:00 Uhr</td>
+                                <td>14:00 - 18:00 Uhr</td>
+                            </tr>
+                            <tr>
+                                <td>Donnerstag</td>
+                                <td>07:00 - 12:00 Uhr</td>
+                                <td>14:00 - 18:00 Uhr</td>
+                            </tr>
+                            <tr>
+                                <td>Freitag</td>
+                                <td>07:00 - 17:00 Uhr</td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Samstag</td>
+                                <td>07:00 - 16:00 Uhr</td>
+                                <td>(1 x pro Monat)</td>
+                            </tr>
+                            </tbody>
+                        </table> -->
+                        </div>
+                </div>
+                </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+            <!-- Footer -->
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <!-- <div class="footer-logo">
+                        <img src="img/home-logo.png" alt="Heilpraxis König Logo" />
+                    </div> -->
+                    <div class="footer-column">
+                        <h4>Heilpraxis König</h4>
+                        <p>
+                            Claudia König<br>
+                            c/o frei-raum <br>
+                            Schillerstrasse 12<br>
+                            73527 Schwäbisch Gmünd
+                        </p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt</h4>
+                        <p>
+                            Telefon: +49 157 738 622 83<br>
+                            E-Mail: <a href="mailto:heilpraxis-koenig@t-online.de">heilpraxis-koenig@t-online.de</a> <br>
+                            Instagram: <a href="https://www.instagram.com/heilpraxis_koenig/" target="_blank" rel="noopener">@heilpraxis_koenig</a>
+                        </p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Rechtliches</h4>
+                        <p>
+                            <a href="/impressum.html">Impressum</a> <br>
+                            <a href="/datenschutz.html">Datenschutz</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 – 2025 Heilpraxis König &nbsp; &nbsp; | &nbsp; &nbsp; Design: <a href="https://html5up.net">HTML5 UP</a></span></p>
+                </div>
+            </footer>
 
+        </div>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 	</body>
 </html>
