@@ -774,6 +774,7 @@ input, select, textarea {
 			.spotlight.therapy .image.middle img {
 				object-fit: cover;
 				object-position: center -40px;
+				max-height: 400px;
 			}
 		}
 
@@ -1562,7 +1563,7 @@ input, select, textarea {
 	.list summary::before {
 		content: "\f067";
 		font-family: "Font Awesome 5 Free";
-		font-weight: 500;
+		font-weight: 900;
 		transition: transform 0.2s ease-in-out;
 		margin-right: 1rem;
 		color: #ad8330;
@@ -1659,9 +1660,15 @@ input, select, textarea {
 	i.small {
 		margin-right: 0.5rem;
 		color: #ad8330;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		position: relative;
 		vertical-align: middle;
+	}
+
+	i.fab.small {
+		margin-left: 1px;
+		font-size: 20px;
+		font-weight: 600;
 	}
 
 /* Contact */
