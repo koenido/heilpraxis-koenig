@@ -843,7 +843,7 @@ input, select, textarea {
 
 	.nav .header {
 		display: inline-block;
-		width: 80%;
+		width: 90%;
 		height: 40pt;
 		padding: 0;
 		border-top: 2px solid rgba(200, 180, 124, 0.5);
@@ -931,11 +931,13 @@ input, select, textarea {
 			height: auto;
 			opacity: 0;
 			transition: max-height .4s ease;
+			pointer-events: none;
 		}
 
 		.nav .nav-toggle-checkbox:checked ~ .header {
 			max-height: 500px;
 			opacity: 1;
+			pointer-events: auto;
 		}
 
 		.nav .header ul {
