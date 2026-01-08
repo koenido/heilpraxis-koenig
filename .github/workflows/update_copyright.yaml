@@ -1,7 +1,8 @@
 name: Update copyright year
 
 on:
-  schedule:
+  - workflow_dispatch
+  - schedule:
     - cron:  '5 0 1 1 *' # 00:05 AM on January 1
 
 jobs:
@@ -14,8 +15,9 @@ jobs:
 
       - name: Replace copyright year
         run: |
+          set -euo pipefail
           NEW_YEAR=$(date +'%Y')
-          sed -Ei "s/(&copy;[[:space:]]+2023[[:space:]]+–[[:space:]]+)([0-9]{4})/\\1${NEW_YEAR}/" www/index.html
+          find www -type f -name "*.html" -exec sed -Ei 's/(&copy;[[:space:]]+2023[[:space:]]+–[[:space:]]+)([0-9]{4})/\\1'"${NEW_YEAR}"'/' {} +
 
       - name: Commit and push
         run: |
