@@ -1,8 +1,12 @@
 name: Update copyright year
 
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '5 0 1 1 *' # 00:05 AM on January 1
+
+permissions:
+  contents: write
 
 jobs:
   update-year:
@@ -14,16 +18,17 @@ jobs:
 
       - name: Replace copyright year
         run: |
+          set -euo pipefail
           NEW_YEAR=$(date +'%Y')
-          sed -Ei "s/(&copy;[[:space:]]+2023[[:space:]]+–[[:space:]]+)([0-9]{4})/\\1${NEW_YEAR}/" www/index.html
+          find www/ -type f -name "*.html" -exec sed -Ei 's/(&copy;[[:space:]]+2023[[:space:]]+–[[:space:]]+)([0-9]{4})/\1'"${NEW_YEAR}"'/' {} +
 
       - name: Commit and push
         run: |
           git config user.name  "github-action"
           git config user.email "github-actions@noreply.github.com"
 
-          git add index.html
-          git diff --quiet || git commit -m "Update copyright year to $(date +'%Y')"
+          git add -A www/
+          git diff --cached --quiet || git commit -m "Update copyright year to $(date +'%Y')"
           git push origin HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
