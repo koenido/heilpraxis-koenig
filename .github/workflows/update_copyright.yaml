@@ -1,8 +1,8 @@
 name: Update copyright year
 
 on:
-  - workflow_dispatch
-  - schedule:
+  workflow_dispatch
+  schedule:
     - cron:  '5 0 1 1 *' # 00:05 AM on January 1
 
 jobs:
